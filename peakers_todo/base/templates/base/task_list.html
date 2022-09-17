@@ -1,0 +1,16 @@
+<h1>Peaker's Todo List</h1>
+
+<table>
+    <tr>
+        <th>Task</th>
+    </tr>
+    {% for task in tasks %}
+
+    <tr>
+        <td>{{task.title}}</td>
+    </tr>
+
+    {% empty %}
+        <h3>No tasks yet</h3>
+    {% endfor %}
+</table>
